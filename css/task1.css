@@ -1,0 +1,61 @@
+.navbar-brand{
+    font-size: 25px;
+}
+.nav-item{
+    padding-right: 50px;  
+    
+}
+
+.nav-link{
+    color: rgb(0, 0, 0);
+    font-family: 'Oswald';
+    font-size: 16px;
+}
+.nav-link:hover{
+    background-color: white;
+    color: red;
+  
+}
+.nav-link:focus{
+    background-color: rgb(237, 51, 51);
+    
+  
+}
+
+.navbar-brand{
+    color: red;
+    font-family: 'Oswald';
+}
+.navbar-brand:hover{
+    color:rgb(0, 0, 0);
+}
+.paragraph{
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+}
+#pro1{
+    width:150px;
+    height: 190px;
+}
+    .bg{
+        background-image: url("../img/bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+    }
+    
+#icons{
+    padding-top: 15px;
+}
+
+.container{
+    height:100%;
+    width: 30%;
+}

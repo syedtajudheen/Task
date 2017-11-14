@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+       <head>
+                 <!-- BOOTSTRAP -->
+                 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+                 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+                 <!-- FONT FAMILY -->
+                 <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">    
+                 <!-- FONTAWSOME ICONS -->
+                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                 <!-- css style  -->  
+                 <style> 
+                      .warn{
+                            color: red;
+                      }
+                 </style>
+       </head>
+
+    <body>
+     
+      <div id="demo" class="container">
+             <fieldset>
+                     <legend>CONTACT US</legend>
+                            <!-- FORM TAG -->
+                            <form name="contact_form" class="form-horizontal" >
+                                          <br> <br>
+
+                                          <!-- FIRST NAME - TEXT INPUT  -->
+                                          <div class="form-group">
+                                                    <label class="control-label col-sm-5" for="firstname">FirstName  :</label>
+                                              <div  class="col-sm-3">         
+                                                    <input type="text" class="form-control" onblur="firstnamevalidation()"  placeholder="Enter FirstName" name="firstname">   
+                                              </div>
+                                                    <span class="warn" id="error_1"></span>   
+                                          </div>
+
+                                          <!-- LAST NAME - TEXT INPUT  -->
+                                          <div class="form-group">
+                                                      <label class="control-label col-sm-5" for="lastname">LastName :</label>
+                                                 <div class="col-sm-3">          
+                                                      <input type="text" class="form-control" onblur="lastnamevalidation()" placeholder="Enter LastName" name="lastname" >
+                                                 </div>
+                                                      <span class="warn" id="error_2"> </span>
+                                          </div>
+
+                                          <!-- EMAIL-ID  -INPUT -->
+                                          <div class="form-group">
+                                                      <label class="control-label col-sm-5" for="email">Email  :</label>
+                                                <div class="col-sm-3">
+                                                     <input type="email" class="form-control" onblur="emailvalidation()" placeholder="Enter Email" name="email" > 
+                                                </div>
+                                                     <span class="warn" id="error_email"></span>           
+                                          </div>
+
+                                          <!-- CONTACT NUMBER - INPUT -->
+                                          <div class="form-group">
+                                                      <label class="control-label col-sm-5" for="contactno">Contact No.  :</label>
+                                               <div class="col-sm-3">
+                                                    <input type="number" class="form-control" onblur="contactvalidation()" placeholder="Enter ContactNumber" name="contactno">
+                                               </div>
+                                                    <span class="warn" id="error_num"></span>   
+                                          </div>
+                                          <!--  MESSAGE BOX - INPUT TEXT -->
+                                          <div class="form-group">
+                                                      <label class="control-label col-sm-5" for="message">Message :</label>
+                                               <div class="col-sm-3">
+                                                    <textarea class="form-control" name="message" onblur="messagevalidation()" rows="3" placeholder="Leave your Message" ></textarea>
+                                               </div>
+                                                    <span class="warn" id="error_msg"></span>  
+                                          </div>
+                                          <br>
+                                        </div>                               
+                                          <!-- SUBMIT BUTTON -->
+                                          <div class="form-group"> 
+                                                <div class="col-sm-14">
+                                                     <button type="submit" value="submit" name="submit" onclick="formvalidation()" class="btn btn-primary">Submit</button>
+                                                </div>
+                                          </div>  
+                              </form>   
+  
+                                          <div id="icons">
+                                                         <span style="padding-right:15px;" class="fa fa-facebook-official fa-2x"></span>
+                                                         <span style="padding-right:15px;"  class="fa fa-twitter fa-2x"></span>
+                                                         <span style="padding-right:15px;" class="fa fa-instagram fa-2x"></span>
+                                                         <span  class="fa fa-linkedin-square fa-2x"></span>
+                                          </div>         
+
+             </fieldset>
+      </div>
+       
+         
+        
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'></script>
+        <script  src="js/contact.js"></script>
+
+  
+ 
+    </body>
+</html>

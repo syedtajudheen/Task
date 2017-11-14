@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>SYED TAJUDHEEN</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" type="text/css" href="css/task1.css">	\
+      <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/5773C321-FEFC-394A-BE18-B93EABA51D8C/main.js" charset="UTF-8"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   
+ 
+  </head>
+
+    <body>
+      <!-- NAVIGATION BAR -->
+      <nav class="navbar  navbar-fixed-top " style= "background-color: #ffffff;">	     		
+      <!-- NAVBAR-TITLE(BRAND NAME) -->    
+			  	<div class="navbar-header">
+				     		 <a  class="navbar-brand" href="#" title="SYED">S Y E D - T A J U D H E E N</a>   
+				     		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbarNav" aria-expanded="true" aria-controls="mynavbarNav" >
+						              <span class="sr-only">Toggle navigation</span>
+						              <span class="icon-bar"></span>
+						              <span class="icon-bar"></span>
+						              <span class="icon-bar"></span>
+	                    </button>
+          </div>
+
+          <div class="collapse navbar-collapse navbar-right" id="mynavbarNav">  
+            <!-- NAVBAR ITEMS -->       
+                  <ul class="nav navbar-nav navbar-right" class="nav flex-column">
+                        <!-- HOME -->  
+                        <li class="nav-item ">
+                            <a class="nav-link" id="index" href="#" ><span class="glyphicon glyphicon-home" aria-hidden="true"></span>  HOME </a>
+                        </li>
+                        <!-- ABOUT US -->  
+                        <li class="nav-item">
+                            <a class="nav-link" id="about" href="#" >ABOUT ME</a>   
+                        </li>
+                        <!-- CONTACT US -->  
+                        <li class="nav-item">
+                            <a class="nav-link" id="contact" href="#" >CONTACT ME</a>
+                        </li>
+                        <!-- LINKS -->  
+                        <li class="nav-item">
+                            <a class="nav-link" id="link" href="#">LINKS</a>
+                        </li>
+                  </ul>  
+          </div>                
+      </nav>
+       <!-- BACKGROUND IMAGE IN DIV TAG -->  
+      <div class="bg"></div>
+
+      <div id="hm"></div>
+      <div id="lin"></div>
+
+      <!-- AJAX -->  
+      <script>   
+
+            $('#hm' ).load("../html/home.html");
+
+            $(document).ready(function(){
+            $('#about').click(function() {
+            $('#demo' ).load("../html/aboutus.html");
+              }); 
+            });
+
+            $(document).ready(function(){
+            $('#contact').click(function() {
+            $('#demo' ).load("../html/contact.html");
+              }); 
+            });
+  
+            $(document).ready(function(){
+            $('#index').click(function() {
+            $('#home' ).load("index.html");
+              }); 
+            });
+
+            $(document).ready(function(){
+            $('#link').click(function() {
+            $('#demo' ).load("../html/links.html");
+              }); 
+            });
+        
+      </script>
+   </body>
+
+</html>
+ 
